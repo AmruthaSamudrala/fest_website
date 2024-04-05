@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>ANITS FEST 2K24</title>
+  </head>
+
+  <body>
+    <!-- The login page -->
+    <div class="login-overlay" onclick="closeRegister()">
+      <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>Email</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>college Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>Phone number</label>
+          </div>
+
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 ps-5 pe-5">
+      <a href="#" class="navbar-brand">FEST 2K24</a>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="active nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Department</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="openRegister()">Register</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="hero">
+        <div class="container ma">
+          <div class="row">
+            <div class="col-lg-4">
+              <div>
+                <h1 id="anits">ANITS</h1>
+                <h3 id="fest-tag">fest 2k24</h3>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="./screws.svg" alt="Screws Image" width="300px" />
+            </div>
+            <div class="col-lg-4">
+              <img src="./games.svg" alt="Games" width="200px" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="./stalls.svg" alt="Stalls" width="300" />
+            </div>
+            <div class="col-lg-4">
+              <img src="./study.svg" alt="Study Image" width="300" />
+            </div>
+            <div class="col-lg-4">
+              <img src="./dance.svg" alt="Dancing" width="200" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="depts">
+        <h1 class="text-center">departments</h1>
+        <div class="container mt-5 mb-5 pt-5 pb-5">
+          <div class="row mt-5">
+            <div class="dept col-3">
+              <img src="./inventum.jpg" alt="Inventum Logo" />
+              <span class="hover-text">INVENTUM</span>
+            </div>
+            <div class="dept col-3">
+              <img src="./radian.jpg" alt="Inventum Logo" />
+              <span class="hover-text">RADIAN</span>
+            </div>
+            <div class="dept col-3">
+              <img src="./arc.jpg" alt="Inventum Logo" />
+              <span class="hover-text">ARC</span>
+            </div>
+            <div class="dept col-3">
+              <img src="cursors.jpg" alt="Inventum Logo" />
+              <span class="hover-text">CURSORS</span>
+            </div>
+          </div>
+          <div class="row mt-5 mb-5">
+            <div class="dept col-3">
+              <img src="./ignition.jpg" alt="Inventum Logo" />
+              <span class="hover-text">IGNITION</span>
+            </div>
+            <div class="dept col-3">
+              <img src="./vinirmithi.jpg" alt="Inventum Logo" />
+              <span class="hover-text">VINIRMITHI</span>
+            </div>
+            <div class="dept col-3">
+              <img src="./chemflare.jpg" alt="Inventum Logo" />
+              <span class="hover-text">CHEMFLARE</span>
+            </div>
+            <div class="dept col-3">
+              <img src="./elektra.jpg" alt="Inventum Logo" />
+              <span class="hover-text">ELEKTRA</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="events">
+        <h1 class="text-center">events</h1>
+        <div class="container">
+          <div class="row justify-content-space-between ma mb-5">
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./briantease.webp" alt="Brain Tease" />
+                <h2 class="card-name text-center p-3">Brain Tease</h2>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./talent expo.webp" alt="Talent Expo" />
+                <h2 class="card-name text-center p-3">Talent Expo</h2>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./charmwithdance.jfif" alt="Charm With Dance" />
+                <h2 class="card-name text-center p-3">Charm With Dance</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-space-between ma mb-5">
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./buildabot.webp" alt="Build a Bot" />
+                <h2 class="card-name text-center p-3">Build a Bot</h2>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./project expo.webp" alt="Project Expo" />
+                <h2 class="card-name text-center p-3">Project Expo</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blank"></section>
+      <section id="venue">
+        <div class="container">
+          <h2 class="text-left">Venue</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="mylead">
+                Anil Neerukonda Institute of Technology and Sciences
+              </p>
+              <p class="mylead">Sangivalasa, Bheemunipatnam Vishakapatnam</p>
+              <br />
+              <h3>Timings</h3>
+              <h4>Mar 1st - 2nd</h4>
+              <ul>
+                <li>1st : Technical Events</li>
+                <li>2nd : Cultural Events</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <img src="./anits.webp" alt="Anits College Photo" width="400" />
+            </div>
+          </div>
+          <br />
+          <div class="row between">
+            <div>
+              <span style="font-weight: 700">Website:</span>
+              <u>www.anits.edu.in</u>
+            </div>
+            <div class="mylead">Come, Participate, Enjoy ❤️</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

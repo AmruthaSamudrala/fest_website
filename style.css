@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --powder-blue: #B2D7E9;
+    --navy-blue: #242644;
+    --shady-blue: #3A6B8B;
+    --cool-grey: #7EABC9;
+}
+
+.active {
+    color: var(--powder-blue);
+}
+section::after, section::before {
+    content: ' ';
+    display: table;
+}
+
+#hero {
+    background-color: #b2d7e9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    font-weight: bold;
+    background-color: var(--navy-blue);
+    color: #fff;
+}
+.navbar-brand {
+    color: #fff;
+}
+.nav-list {
+    margin: 0;
+}
+.nav-item {
+    display: inline-block;
+    padding: 1rem;
+}
+.nav-link {
+    text-decoration: underline;
+}
+
+#anits {
+    font-weight: 900;
+    font-size: 7rem;
+    text-shadow: 5px 5px var(--shady-blue), 10px 10px var(--cool-grey);
+    margin: 0;
+    padding: 0;
+    letter-spacing: 6px;
+}
+#fest-tag {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+#hero .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+#depts {
+    background-color: var(--navy-blue);
+    color: #fff;
+}
+#events {
+    background-color: var(--powder-blue);
+}
+section {
+    padding: 3rem 0;
+}
+section > h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin: 0 0 3rem;
+}
+#depts > .container {
+    background-color: #7eabc962;
+    border-radius: 15px;
+}
+.dept {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-text {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 2px white;
+    z-index: -10;
+    color: var(--navy-blue);
+}
+.dept > img:hover {
+    transition-duration: 500ms;
+    filter: blur(2px);
+    opacity: 0.6;
+    box-shadow: 5px 5px var(--powder-blue);
+}
+.dept > img:hover + .hover-text {
+    z-index: 10;
+}
+.dept img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #f8e9cf;
+    max-width: max-content;
+}
+.card > img {
+    margin: 2rem;
+    width: 250px;
+    height: 400px;
+}
+#events .row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#blank {
+    background-color: var(--navy-blue);
+}
+#venue {
+    background-color: var(--powder-blue);
+    padding: 4rem 10rem;
+}
+#venue h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+#venue h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.mylead {
+    font-weight: 600;
+}
+.between {
+    justify-content: space-between;
+}
+.between > div {
+    display: inline; 
+}
